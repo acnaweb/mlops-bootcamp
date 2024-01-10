@@ -9,11 +9,11 @@ import hydra
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score
-from hydra import utils, DictConfig
+from hydra import utils
 from typing import Any, Tuple
 
 
-def make_prediction(input_data: Any, config: DictConfig) -> Tuple:
+def make_prediction(input_data: Any, config) -> Tuple:
 
     _pipe_match = joblib.load(
         filename=utils.to_absolute_path(config.pipeline.pipeline01)
@@ -24,8 +24,8 @@ def make_prediction(input_data: Any, config: DictConfig) -> Tuple:
     return results, _pipe_match
 
 
-@hydra.main(config_name="preprocessing.yaml")
-def training(config: DictConfig) -> None:
+@hydra.main(version_base="1.2", config_name="preprocessing", config_path="config")
+def training(config) -> None:
 
     current_path = utils.get_original_cwd() + "/"
 
