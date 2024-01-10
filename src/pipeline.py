@@ -1,6 +1,6 @@
 """Pipeline"""
 
-import preprocessors as pp
+import src.preprocessors as pp
 
 # from sklearn.svm import LinearSVC
 from sklearn.pipeline import Pipeline

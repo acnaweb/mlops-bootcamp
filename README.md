@@ -51,3 +51,4 @@ Achieve perfect accuracy score
 
 - https://docs.kanaries.net/pt/topics/Python/jupyterlab-vs-notebook
 - https://github.com/cookiecutter/cookiecutter
+- https://towardsdatascience.com/automate-your-python-code-documentation-with-pre-commit-hooks-35c7191949a4

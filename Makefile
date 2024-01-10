@@ -50,6 +50,11 @@ smoke_test:
 run:
 	python main.py --action action1 --param1 "valor qualquer"
 
+docs_view:
+	pdoc --http : src
+
+docs_save:
+	pdoc --html --output-dir ./docs src
 
 train:
 	python src/train_pipeline.py

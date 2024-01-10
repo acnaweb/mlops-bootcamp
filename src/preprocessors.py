@@ -7,8 +7,9 @@ from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.preprocessing import OneHotEncoder
 
 
-# categorical missing value imputer
 class CategoricalImputer(BaseEstimator, TransformerMixin):
+    """Categorical missing value imputer"""
+
     def __init__(self, variables=None):
         """__init__"""
 
@@ -30,8 +31,9 @@ class CategoricalImputer(BaseEstimator, TransformerMixin):
         return X
 
 
-# Numerical missing value imputer
 class NumericalImputer(BaseEstimator, TransformerMixin):
+    """Numerical missing value imputer"""
+
     def __init__(self, variables=None):
         """__init__"""
 
@@ -58,8 +60,9 @@ class NumericalImputer(BaseEstimator, TransformerMixin):
         return X
 
 
-# Temporal variable calculator
 class TemporalVariableEstimator(BaseEstimator, TransformerMixin):
+    """Temporal variable calculator"""
+
     def __init__(self, variables=None, reference_variable=None):
         """__init__"""
 
@@ -86,8 +89,9 @@ class TemporalVariableEstimator(BaseEstimator, TransformerMixin):
         return X
 
 
-# transform categorical to numerical
 class CategoricalToNumerical(BaseEstimator, TransformerMixin):
+    """Transform categorical to numerical"""
+
     def __init__(self, variables=None):
         """__init__"""
 
@@ -102,6 +106,7 @@ class CategoricalToNumerical(BaseEstimator, TransformerMixin):
         """transform"""
 
         def object_to_num(x):
+            """cast object to num"""
 
             if x is not np.nan:
                 x = "".join(x.split(","))
@@ -115,8 +120,9 @@ class CategoricalToNumerical(BaseEstimator, TransformerMixin):
         return X
 
 
-# frequent label categorical encoder
 class RareLabelCategoricalEncoder(BaseEstimator, TransformerMixin):
+    """Frequent label categorical encoder"""
+
     def __init__(self, tol=0.05, variables=None):
         """__init__"""
 
@@ -150,8 +156,9 @@ class RareLabelCategoricalEncoder(BaseEstimator, TransformerMixin):
         return X
 
 
-# string to numbers categorical encoder
 class CategoricalEncoder(BaseEstimator, TransformerMixin):
+    """String to numbers categorical encoder"""
+
     def __init__(self, variables=None, target=None):
         """__init__"""
 
@@ -199,8 +206,9 @@ class CategoricalEncoder(BaseEstimator, TransformerMixin):
         return X
 
 
-# logarithm transformer
 class LogTransformer(BaseEstimator, TransformerMixin):
+    """Logarithm transformer"""
+
     def __init__(self, variables=None):
         """__init__"""
 
@@ -226,6 +234,8 @@ class LogTransformer(BaseEstimator, TransformerMixin):
 
 
 class DropUnecessaryFeatures(BaseEstimator, TransformerMixin):
+    """Drop unecessary features"""
+
     def __init__(self, variables_to_drop=None):
         """__init__"""
 
@@ -247,6 +257,8 @@ class DropUnecessaryFeatures(BaseEstimator, TransformerMixin):
 
 
 class LabelExtraction(BaseEstimator, TransformerMixin):
+    """Label Extraction"""
+
     def __init__(self, variables=None):
         """__init__"""
 

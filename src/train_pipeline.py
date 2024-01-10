@@ -5,7 +5,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 import joblib
 
-from pipeline import pipeline
+from src.pipeline import pipeline
 import hydra
 from hydra import utils
 
