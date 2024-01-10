@@ -15,7 +15,7 @@ repos:
     rev: 1.4.0
     hooks:
     -   id: interrogate
-        args: [-vv, --fail-under=90, src]    
+        args: [-vv, -i, -I, --fail-under=90, src]    
 
 
 
