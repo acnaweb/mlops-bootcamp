@@ -1,3 +1,5 @@
+"""Train"""
+
 import pandas as pd
 
 from sklearn.model_selection import train_test_split
@@ -10,7 +12,7 @@ from hydra import utils
 
 @hydra.main(version_base="1.2", config_name="preprocessing", config_path="config")
 def run_training(config) -> None:
-    """Train the model."""
+    """run_training"""
 
     # print(os.getcwd())
     current_path = utils.get_original_cwd() + "/"

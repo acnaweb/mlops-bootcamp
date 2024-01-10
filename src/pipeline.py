@@ -1,3 +1,5 @@
+"""Pipeline"""
+
 import preprocessors as pp
 
 # from sklearn.svm import LinearSVC
@@ -9,6 +11,7 @@ from sklearn.linear_model import LogisticRegression
 
 
 def pipeline(config) -> Pipeline:
+    """pipeline"""
 
     match_pipe = Pipeline(
         [

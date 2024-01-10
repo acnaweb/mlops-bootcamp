@@ -1,3 +1,5 @@
+"""Predict"""
+
 import pandas as pd
 
 import joblib
@@ -14,6 +16,7 @@ from typing import Any, Tuple
 
 
 def make_prediction(input_data: Any, config) -> Tuple:
+    """make_prediction"""
 
     _pipe_match = joblib.load(
         filename=utils.to_absolute_path(config.pipeline.pipeline01)
@@ -26,6 +29,7 @@ def make_prediction(input_data: Any, config) -> Tuple:
 
 @hydra.main(version_base="1.2", config_name="preprocessing", config_path="config")
 def training(config) -> None:
+    """training"""
 
     current_path = utils.get_original_cwd() + "/"
 
