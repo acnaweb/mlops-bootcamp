@@ -11,6 +11,11 @@ repos:
     rev: 'v1.5.1'  # Use the sha / tag you want to point at
     hooks:
     -   id: mypy
+-   repo: https://github.com/econchick/interrogate
+    rev: 1.4.0
+    hooks:
+    -   id: interrogate
+        args: [--quiet, --fail-under=70, clumper]    
 
 
 
