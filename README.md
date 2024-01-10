@@ -22,6 +22,31 @@ cookiecutter https://github.com/khuyentran1401/data-science-template
 - https://dvc.org/
 
 
+### Model 
+
+#### Dataset
+
+The dataset is collected from [Kaggle Speed Dating Experiment](https://www.kaggle.com/annavictoria/speed-dating-experiment)
+
+#### How to run 
+```
+make train
+make predict
+```
+#### Files in this src
+* [preprocessors.py](./src/preprocessors.py): Classes for preprocessing
+* [pipeline.py](./src/pipeline.py): Pipeline of estimator and transformers for both numerical and categorical values 
+* [train_pipeline.py](./src/train_pipeline.py): for training 
+* [predict.py](./src/predict.py): for preprediction
+* [preprocessing.py](./src/config/preprocessing.py): to save information about the dataset, variables, and pipeline's name
+
+#### Model
+Decision Tree Classifier
+
+#### Result
+Achieve perfect accuracy score
+
+
 ## References
 
 - https://docs.kanaries.net/pt/topics/Python/jupyterlab-vs-notebook
