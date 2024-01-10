@@ -8,7 +8,6 @@ action_choices = ["action1", "action2"]
 
 
 def main() -> None:
-    from src import app
 
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -18,7 +17,7 @@ def main() -> None:
 
     args = parser.parse_args()
 
-    app.run(args.action, args.param1)
+    logging.info(args)
 
 
 if __name__ == "__main__":

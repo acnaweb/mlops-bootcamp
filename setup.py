@@ -6,13 +6,13 @@ REQUIRED_PACKAGES = open("requirements.txt").readlines()
 DEV_PACKAGES = open("requirements.dev.txt").readlines()
 
 setup(
-    name="python-pkg",
+    name="mlops-bootcamp",
     version="0.0.1",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     author="AcNaWeb",
     author_email="ac@marketmining.com.br",
-    url="https://github.com/acnaweb/python",
+    url="https://github.com/acnaweb/mlops_bootcamp",
     install_requires=REQUIRED_PACKAGES,
     extras_require={"interactive": DEV_PACKAGES},
     packages=find_packages(include=["src", "src.*"]),

@@ -1,4 +1,4 @@
-export IMAGE_NAME=my-image
+export IMAGE_NAME=mlops_bootcamp
 
 # Local development
 install:
@@ -49,3 +49,10 @@ smoke_test:
 
 run:
 	python main.py --action action1 --param1 "valor qualquer"
+
+
+train:
+	python src/train_pipeline.py
+
+predict:
+	python src/predict.py
