@@ -5,11 +5,11 @@ import joblib
 
 from pipeline import pipeline
 import hydra
-from hydra import utils, DictConfig
+from hydra import utils
 
 
-@hydra.main(version_base="1.2", config_name="preprocessing", config_path=".")
-def run_training(config: DictConfig) -> None:
+@hydra.main(version_base="1.2", config_name="preprocessing", config_path="config")
+def run_training(config) -> None:
     """Train the model."""
 
     # print(os.getcwd())

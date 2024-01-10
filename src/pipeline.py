@@ -6,10 +6,9 @@ from sklearn.preprocessing import MinMaxScaler
 
 # from sklearn.feature_extraction import FeatureHasher
 from sklearn.linear_model import LogisticRegression
-from hydra import DictConfig
 
 
-def pipeline(config: DictConfig) -> Pipeline:
+def pipeline(config) -> Pipeline:
 
     match_pipe = Pipeline(
         [
@@ -55,7 +54,7 @@ def pipeline(config: DictConfig) -> Pipeline:
             # ('log_transformer',
             #    pp.LogTransformer()),
             ("scaler", MinMaxScaler()),
-            ("classifier", LogisticRegression()),
+            ("classifier", LogisticRegression(max_iter=1000)),
         ]
     )
 
