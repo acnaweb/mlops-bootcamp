@@ -4,6 +4,8 @@ credentials/*
 models/*
 outputs/*
 **/mlruns/*
+mlruns/*
+mlartifacts/*
 
 # Node *******************************************************************************
 # Logs
