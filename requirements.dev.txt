@@ -7,3 +7,4 @@ jupyterlab
 cookiecutter
 pdoc3
 interrogate
+mlflow
