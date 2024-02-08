@@ -57,4 +57,5 @@ Achieve perfect accuracy score
 - https://towardsdatascience.com/automate-your-python-code-documentation-with-pre-commit-hooks-35c7191949a4
 - https://pycaret.gitbook.io/docs/get-started/functions
 - https://www.kaggle.com/code/jamesmcguigan/tps-pycaret2-automl-regression-feb-2021?scriptVersionId=53616532
+- https://ipython.readthedocs.io/en/stable/install/kernel_install.html
 
