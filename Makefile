@@ -9,6 +9,7 @@ install:
 	pip install -e .[interactive]; \
 	pre-commit install; \
 	git config --bool flake8.strict true; \
+	mkdir data models; \
 
 formatter:
 	black src
