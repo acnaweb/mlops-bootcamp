@@ -8,3 +8,4 @@ cookiecutter
 pdoc3
 interrogate
 mlflow
+dvc

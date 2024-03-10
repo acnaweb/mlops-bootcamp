@@ -1,5 +1,17 @@
 # MLOps Bootcamp
 
+## Install
+
+
+```sh
+make install
+
+``` 
+
+
+## Info
+
+
 MLOps with MLFlow, Scikit-learn, CI/CD, Azure, FastAPI, Gradio, SHAP, Docker, DVC, Flask, BentoML
 
 ### Project Template (Cookiecutter Data Science)
