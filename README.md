@@ -8,11 +8,17 @@ make install
 
 ``` 
 
-
 ## Info
 
 
-MLOps with MLFlow, Scikit-learn, CI/CD, Azure, FastAPI, Gradio, SHAP, Docker, DVC, Flask, BentoML
+MLOps with MLFlow, Scikit-learn, CI/CD, Azure, FastAPI, Gradio, SHAP, Docker, DVC, Flask, BentoML.
+
+
+### Experiment Tutorial
+
+
+- https://dagshub.com/acnaweb/experiment-tutorial.git
+
 
 ### Project Template (Cookiecutter Data Science)
 
@@ -28,7 +34,7 @@ cookiecutter https://github.com/khuyentran1401/data-science-template
 
 - https://pdoc.dev/
 
-### Data Versioning (dvc)
+### Data Versioning (Dvc)
 
 - https://dvc.org/
 
@@ -40,9 +46,13 @@ dvc add data
 dvc commit -m "A change"
 dvc pull
 ```
+#### Dvc Pipelines
+
+```sh
+dvc repro
+```
 
 #### Dvc Remote S3 (MinIO)
-
 
 - Add remote
 
