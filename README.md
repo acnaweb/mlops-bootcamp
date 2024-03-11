@@ -32,19 +32,43 @@ cookiecutter https://github.com/khuyentran1401/data-science-template
 
 - https://dvc.org/
 
-#### 
+#### Commands
 
 ```
 dvc init
-dvc add .
+dvc add data
 dvc commit -m "A change"
-dvc remote add newremove s3://dvc/datasets
-dvc push
 dvc pull
 ```
 
+#### Dvc Remote S3 (MinIO)
 
 
+- Add remote
+
+```sh
+dvc remote add -d minio s3://dvc/datasets -f
+dvc remote modify minio endpointurl http://127.0.0.1:9000
+
+```
+
+- Auth (method 1 - setup env vars)
+
+> - AWS_ACCESS_KEY_ID=
+> - AWS_SECRET_ACCESS_KEY=
+
+- Auth (method 2 - modify remove)
+
+```sh
+dvc remote modify minio access_key_id <access_key>
+dvc remote modify minio secret_access_key <secret_access>
+```sh
+
+- Push datasets
+
+```sh
+dvc push
+```
 
 ### Model 
 
@@ -77,10 +101,5 @@ Achieve perfect accuracy score
 
 ## References
 
-- https://docs.kanaries.net/pt/topics/Python/jupyterlab-vs-notebook
-- https://github.com/cookiecutter/cookiecutter
-- https://towardsdatascience.com/automate-your-python-code-documentation-with-pre-commit-hooks-35c7191949a4
-- https://pycaret.gitbook.io/docs/get-started/functions
-- https://www.kaggle.com/code/jamesmcguigan/tps-pycaret2-automl-regression-feb-2021?scriptVersionId=53616532
-- https://ipython.readthedocs.io/en/stable/install/kernel_install.html
+- https://stackoverflow.com/questions/67635688/installation-dvc-on-minio-storage
 
