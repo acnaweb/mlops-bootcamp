@@ -32,6 +32,19 @@ cookiecutter https://github.com/khuyentran1401/data-science-template
 
 - https://dvc.org/
 
+#### 
+
+```
+dvc init
+dvc add .
+dvc commit -m "A change"
+dvc remote add newremove s3://dvc/datasets
+dvc push
+dvc pull
+```
+
+
+
 
 ### Model 
 

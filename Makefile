@@ -10,6 +10,8 @@ install:
 	pre-commit install; \
 	git config --bool flake8.strict true; \
 	mkdir data models; \
+	dvc init; \
+	dvc config core.autostage true; \
 
 formatter:
 	black src
