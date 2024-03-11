@@ -1,7 +1,4 @@
-.ignored/*
-data/*
 credentials/*
-models/*
 outputs/*
 **/mlruns/*
 mlruns/*
@@ -836,3 +833,4 @@ fabric.properties
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/eclipse,intellij,visualstudiocode
+/data
