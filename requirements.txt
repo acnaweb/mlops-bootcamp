@@ -2,3 +2,7 @@ hydra-core==1.2
 pandas
 numpy
 scikit-learn
+shap
+fastapi
+uvicorn
+gradio

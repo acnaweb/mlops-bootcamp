@@ -9,3 +9,5 @@ pdoc3
 interrogate
 mlflow
 dvc[s3]
+ipywidgets 
+widgetsnbextension
